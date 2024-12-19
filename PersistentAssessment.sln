@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistentAssessmentApi", "PersistentAssessmentApi\PersistentAssessmentApi.csproj", "{4D573A60-56C2-4E17-9F0F-9D86D6FA7852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistentAssessmentApiTests", "PersistentAssessmentApiTests\PersistentAssessmentApiTests.csproj", "{6EDD8DA8-6F07-4B4F-BB95-91761B6A3503}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D573A60-56C2-4E17-9F0F-9D86D6FA7852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D573A60-56C2-4E17-9F0F-9D86D6FA7852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D573A60-56C2-4E17-9F0F-9D86D6FA7852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D573A60-56C2-4E17-9F0F-9D86D6FA7852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDD8DA8-6F07-4B4F-BB95-91761B6A3503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDD8DA8-6F07-4B4F-BB95-91761B6A3503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDD8DA8-6F07-4B4F-BB95-91761B6A3503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDD8DA8-6F07-4B4F-BB95-91761B6A3503}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
