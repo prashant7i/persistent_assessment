@@ -32,7 +32,9 @@ public class AlphabetControllerTests
         var result = _alphabetController.CheckAlpabet("abcdefghijklmnopqrstuvwxyz");
 
         //Assert
-        result.Value.Should().BeTrue();
+        var okResult = result.Should().BeOfType<OkObjectResult>().Subject;
+        var value = okResult.Value.Should().BeOfType<bool>().Subject;
+        value.Should().BeTrue();
     }
 
     /// <summary>
@@ -51,7 +53,7 @@ public class AlphabetControllerTests
         var result = _alphabetController.CheckAlpabet(input);
 
         //Assert
-        result.Result.Should().BeOfType<BadRequestObjectResult>().Which.Value.Should().Be(expectedMessage);
+        result.Should().BeOfType<BadRequestObjectResult>().Which.Value.Should().Be(expectedMessage);
     }
 
     /// <summary>
@@ -70,6 +72,8 @@ public class AlphabetControllerTests
         var result = _alphabetController.CheckAlpabet(input);
 
         //Assert
-        result.Value.Should().BeFalse();
+        var okResult = result.Should().BeOfType<OkObjectResult>().Subject;
+        var value = okResult.Value.Should().BeOfType<bool>().Subject;
+        value.Should().BeFalse();
     }
 }

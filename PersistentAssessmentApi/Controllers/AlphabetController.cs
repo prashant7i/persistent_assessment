@@ -25,7 +25,7 @@ public class AlphabetController : ControllerBase
     /// <returns>true/false</returns>
     [HttpPost]
     [Route("CheckAlphabet")]
-    public ActionResult<bool> CheckAlpabet([FromBody] string input)
+    public IActionResult CheckAlpabet([FromBody] string input)
     {
         if (string.IsNullOrEmpty(input))
         {
@@ -35,6 +35,6 @@ public class AlphabetController : ControllerBase
         var alphabet = "abcdefghijklmnopqrstuvwxyz";
         var lowerInput = input.ToLower();
 
-        return alphabet.All(letter => lowerInput.Contains(letter));
+        return Ok(alphabet.All(letter => lowerInput.Contains(letter)));
     }
 }
